@@ -1,40 +1,54 @@
-# 🛡 System Reconnaissance Tool (Python)
+# System Reconnaissance Tool (Non-Admin)
 
-## 📌 Description
-This is a beginner-level **System Reconnaissance Tool** written in Python.  
-The tool collects basic system and network information, similar to what is gathered during the **reconnaissance phase** of a cybersecurity attack or security assessment.
+This is a **Python-based System Reconnaissance Tool** designed for **educational purposes** and **cybersecurity learning**. It allows users to collect **comprehensive system information**, display it in the console, save a report locally, and optionally send a copy to a Discord server via webhook.  
 
-This project is designed for **learning purposes** and to demonstrate fundamental cybersecurity concepts.
+The tool is **beginner-friendly**, runs **without admin privileges**, and demonstrates key concepts in **system enumeration, process monitoring, network analysis, and automation**.
 
 ---
 
-## 🎯 Features
-- Operating System detection
-- Hostname identification
-- Local IP address discovery
-- Current logged-in user
-- System architecture
-- Current working directory
+## Table of Contents
+
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Requirements](#requirements)  
+4. [Installation](#installation)  
+5. [Usage](#usage)  
+6. [Sample Output](#sample-output)  
+7. [Learning Outcomes](#learning-outcomes)  
+8. [Notes](#notes)  
+9. [License](#license)  
+10. [Contact](#contact)  
 
 ---
 
-## 🧠 Cybersecurity Concept
-**Reconnaissance** is the first phase of an attack where information about a target system is collected.  
-This tool automates that process using Python and helps understand how much system information is exposed.
+## Project Overview
+
+System reconnaissance is a critical skill in **cybersecurity**, allowing professionals to understand the target system’s structure, resources, and current state. This tool simulates a **real-world system auditing tool**, providing detailed information that can help beginners **practice system monitoring, reporting, and automation**.
+
+This version of the tool is **non-admin**, making it **safe to run on any Windows machine** while still demonstrating **practical cybersecurity skills**.
 
 ---
 
-## 🛠 Technologies Used
-- Python 3
-- os module
-- platform module
-- socket module
-- getpass module
+## Features
+
+- **System Information:** OS, architecture, CPU, memory, hostname, current user, and current directory  
+- **Network Interfaces:** All available interfaces with IP and MAC addresses  
+- **Running Processes:** Lists all processes accessible to the current user  
+- **Reporting:**  
+  - Generates a **timestamped TXT report** saved locally in the `reports/` folder  
+  - Sends a copy of the report to Discord via webhook (optional)  
+- **Non-Admin Execution:** Runs safely without elevated privileges  
+- **Console Display:** Easy-to-read console output for immediate analysis  
 
 ---
 
-## ▶️ How to Run
+## Requirements
 
-### 1️⃣ Clone the repository
+- Python 3.x  
+- [psutil](https://pypi.org/project/psutil/)  
+- [requests](https://pypi.org/project/requests/)  
+
+Install dependencies via pip:
+
 ```bash
-git clone https://github.com/haidersultan0/Recon_tool.git
+pip install psutil requests
