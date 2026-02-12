@@ -11,7 +11,7 @@ if not os.path.exists("reports"):
     os.mkdir("reports")
 
 # Replace with your Discord webhook URL
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1471418528774094910/yTscBZ_joaZ6pu4Y8Cmqejrc7Wc3LyjpVb3RSc-LCAEYDW7PwbE2ENHqMjHotDFBPHxO"
+DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/----------"
 
 # ========================== System Info ==========================
 def get_os_info():
