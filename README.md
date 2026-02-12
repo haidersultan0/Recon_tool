@@ -37,4 +37,4 @@ This tool automates that process using Python and helps understand how much syst
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/system-recon-tool.git
+git clone https://github.com/haidersultan0/Recon_tool.git
